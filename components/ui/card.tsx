@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils"; // If you're using a utility to combine class names
+import { cn } from "../../lib/utils";
 import React from "react";
 
 export function Card({ children, className = "" }: { children: React.ReactNode; className?: string }) {
