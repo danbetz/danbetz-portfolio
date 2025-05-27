@@ -1,6 +1,8 @@
 // app/layout.tsx
 import "../styles/globals.css";
 import { ReactNode } from "react";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+
 
 export const metadata = {
   title: "Daniel Betz Portfolio",
@@ -10,7 +12,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-white text-black font-sans">{children}</body>
+      <body className="bg-white text-black font-sans">
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
