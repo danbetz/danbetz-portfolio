@@ -1,95 +1,78 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <main className="p-8 max-w-4xl mx-auto space-y-12">
+      {/* Hero Section */}
+      <section className="space-y-4">
+        <h1 className="text-4xl font-bold leading-tight">
+          Hi, I’m Dan Betz — a Product & Design Leader in Nonprofit Tech.
+        </h1>
+        <p className="text-lg text-muted-foreground">
+          I build teams, ship delightful products, and mentor the next generation of designers. Currently VP of Product & Design at DonorsChoose.
+        </p>
+        <div className="space-x-4">
+          <Button asChild>
+            <Link href="#contact">Get in touch</Link>
+          </Button>
+          <Button variant="outline" asChild>
+            <Link href="/resume.pdf">View Resume</Link>
+          </Button>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* About Section */}
+      <section className="space-y-2" id="about">
+        <h2 className="text-2xl font-semibold">About Me</h2>
+        <p>
+          With over a decade of experience leading design and product strategy, I’ve scaled product teams, launched platform-defining features, and fostered a culture of collaboration. I started my career in UX and grew into leadership roles at companies like Etsy and Seamless before joining DonorsChoose in 2014.
+        </p>
+        <p>
+          I also coach youth sports in Maplewood, NJ and volunteer as a design mentor.
+        </p>
+      </section>
+
+      {/* Case Studies */}
+      <section className="space-y-6" id="work">
+        <h2 className="text-2xl font-semibold">Work & Impact</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <h3 className="font-medium text-xl">DonorsChoose: Scaling with Pods</h3>
+              <p>
+                Led the evolution of our product org into mission-aligned pods, improving focus, accountability, and outcomes.
+              </p>
+              <Link href="#" className="text-primary underline">
+                Read More
+              </Link>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent className="p-4 space-y-2">
+              <h3 className="font-medium text-xl">Design Leadership & Mentorship</h3>
+              <p>
+                Built a thriving design team and culture from scratch. Mentored junior designers into senior leaders.
+              </p>
+              <Link href="#" className="text-primary underline">
+                Read More
+              </Link>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="space-y-4" id="contact">
+        <h2 className="text-2xl font-semibold">Let’s Connect</h2>
+        <p>
+          Interested in working together, talking shop, or just grabbing coffee? Drop me a line.
+        </p>
+        <Button asChild>
+          <a href="mailto:your.email@example.com">Email Me</a>
+        </Button>
+      </section>
+    </main>
   );
 }
