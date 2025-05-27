@@ -1,13 +1,12 @@
-import { ReactNode } from "react";
+import { cn } from "@/lib/utils"; // If you're using a utility to combine class names
+import React from "react";
 
-export function Card({ children }: { children: ReactNode }) {
-  return (
-    <div className="rounded-xl border bg-white text-black shadow p-4">
-      {children}
-    </div>
-  );
-}
-
-export function CardContent({ children }: { children: ReactNode }) {
-  return <div className="space-y-2">{children}</div>;
+export function CardContent({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return <div className={cn("p-6 pt-0", className)}>{children}</div>;
 }
