@@ -5,12 +5,6 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Passion_One, Noto_Serif } from 'next/font/google';
 
-const passion = Passion_One({
-  subsets: ['latin'],
-  weight: ['400','900'],
-  display: 'swap',
-});
-
 const noto = Noto_Serif({
   subsets: ['latin'],
   weight: ['400','300','200'],
