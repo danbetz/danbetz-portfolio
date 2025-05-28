@@ -4,16 +4,16 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="p-8 max-w-4xl mx-auto space-y-12">
+    <main className="p-8 max-w-4xl mx-auto space-y-12 prose">
       {/* Hero Section */}
       <section className="space-y-4">
-        <h1 className="text-4xl font-bold leading-tight">
-          Hi, I’m Dan Betz — a Product & Design Leader in Nonprofit Tech.
+        <h1 className="font-header">
+          DAN BETZ
         </h1>
-        <p className="text-lg text-muted-foreground">
+        <p className="font-body">
           I build teams, ship delightful products, and mentor the next generation of designers. Currently VP of Product & Design at DonorsChoose.
         </p>
-        <div className="space-x-4">
+        <div className="font-header">
           <Button asChild>
             <Link href="#contact">Get in touch</Link>
           </Button>
@@ -25,7 +25,7 @@ export default function Home() {
 
       {/* About Section */}
       <section className="space-y-2" id="about">
-        <h2 className="text-2xl font-semibold">About Me</h2>
+        <h2 className="font-header">About Me</h2>
         <p>
           With over a decade of experience leading design and product strategy, I’ve scaled product teams, launched platform-defining features, and fostered a culture of collaboration. I started my career in UX and grew into leadership roles at companies like Etsy and Seamless before joining DonorsChoose in 2014.
         </p>
@@ -36,7 +36,7 @@ export default function Home() {
 
       {/* Case Studies */}
       <section className="space-y-6" id="work">
-        <h2 className="text-2xl font-semibold">Work & Impact</h2>
+        <h2 className="font-header">Work & Impact</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card>
             <CardContent className="p-4 space-y-2">
