@@ -12,7 +12,7 @@ theme: {
         css: {
           h1: {
             fontFamily: 'Passion One, sans-serif',
-            fontWeight: '900',
+            fontWeight: '400',
           },
           h2: {
             fontFamily: 'Passion One, sans-serif',
@@ -28,6 +28,6 @@ theme: {
       },
     },
   },
-}
+},
   plugins: [],
 };
