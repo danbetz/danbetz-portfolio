@@ -1,38 +1,35 @@
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className="p-8 max-w-4xl mx-auto space-y-12 prose">
-      {/* Hero Section */}
-      <section className="space-y-4">
-        <h1 className="font-header">
-          DAN BETZ
-        </h1>
-        <p className="font-body">
-          I build teams, ship delightful products, and mentor the next generation of designers. Currently VP of Product & Design at DonorsChoose.
-        </p>
-        <div className="font-header">
-          <Button asChild>
-            <Link href="#contact">Get in touch</Link>
-          </Button>
-          <Button variant="outline" asChild>
-            <Link href="/resume.pdf">View Resume</Link>
-          </Button>
+      <div className="flex flex-col md:flex-row items-center gap-10">
+        {/* Headshot */}
+        <div>
+          <Image
+           src="/images/db-profile.jpg"
+          alt="Dan Betz profile"
+          width={200}
+          height={200}
+          className="rounded-full border-4 border-white"
+          priority
+          />
         </div>
-      </section>
 
-      {/* About Section */}
-      <section className="space-y-2" id="about">
-        <h2 className="font-header">About Me</h2>
-        <p>
-          With over a decade of experience leading design and product strategy, I’ve scaled product teams, launched platform-defining features, and fostered a culture of collaboration. I started my career in UX and grew into leadership roles at companies like Etsy and Seamless before joining DonorsChoose in 2014.
-        </p>
-        <p>
-          I also coach youth sports in Maplewood, NJ and volunteer as a design mentor.
-        </p>
-      </section>
+        {/* Intro Text */}
+        <div className="prose prose-lg font-body max-w-prose">
+          <h1 className="font-header text-4xl">
+            Dan Betz
+          </h1>
+          <p>
+            Product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and driving impactful user experiences. I'm passionate about mentorship, coaching, and making things better—whether that's digital experiences, team culture, or perfecting my chocolate chip cookie recipe.
+
+          </p>
+        </div>
+      </div>
 
       {/* Case Studies */}
       <section className="space-y-6" id="work">

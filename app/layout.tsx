@@ -11,6 +11,11 @@ const noto = Noto_Serif({
   style: ['normal','italic'],
   display: 'swap',
 });
+const passion = Passion_One({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+});
 export const metadata = {
   title: "Dan Betz Portfolio",
   description: "Product & Design Leader in Nonprofit Tech",

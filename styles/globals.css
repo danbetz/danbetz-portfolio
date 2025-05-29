@@ -8,25 +8,20 @@
 @tailwind components;
 @tailwind utilities;
 
-.prose h1, .prose h2 {
+.prose h1, .prose h2, .prose h3 {
   font-family: 'Passion One', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   margin: 1rem 0 0;
   text-transform: uppercase;
   color: #242426;
 }
 
 .prose h2 {
-  font-weight: 400;
   font-size: 32px;
 }
 
 .prose h3 {
-  font-family: 'Noto Serif', serif;
-  font-weight: 200;
-  font-style: italic;
-  font-size: 2rem;
-  margin: 1rem 0 0;
+  font-size: 24px;
 }
 
 .prose p {
