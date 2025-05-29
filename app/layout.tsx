@@ -3,7 +3,7 @@ import "../styles/globals.css";
 import { ReactNode } from "react";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Passion_One, Noto_Serif } from 'next/font/google';
+import { Noto_Serif } from 'next/font/google';
 
 const noto = Noto_Serif({
   subsets: ['latin'],
@@ -11,11 +11,7 @@ const noto = Noto_Serif({
   style: ['normal','italic'],
   display: 'swap',
 });
-const passion = Passion_One({
-  subsets: ['latin'],
-  weight: '400',
-  display: 'swap',
-});
+
 export const metadata = {
   title: "Dan Betz Portfolio",
   description: "Product & Design Leader in Nonprofit Tech",

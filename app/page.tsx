@@ -2,6 +2,13 @@ import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import Link from "next/link";
 import Image from 'next/image';
+import { Passion_One} from 'next/font/google';
+
+const passion = Passion_One({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+});
 
 export default function Home() {
   return (
@@ -21,12 +28,11 @@ export default function Home() {
 
         {/* Intro Text */}
         <div className="prose prose-lg font-body max-w-prose">
-          <h1 className="font-header text-4xl">
+          <h1 className={`${passion.className}`}>
             Dan Betz
           </h1>
           <p>
-            Product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and driving impactful user experiences. I'm passionate about mentorship, coaching, and making things better—whether that's digital experiences, team culture, or perfecting my chocolate chip cookie recipe.
-
+            Product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and driving impactful user experiences. I’m passionate about mentorship, coaching, and making things better-whether that’s digital experiences, team culture, or perfecting my chocolate chip cookie recipe.
           </p>
         </div>
       </div>
