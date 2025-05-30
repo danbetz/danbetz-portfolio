@@ -1,36 +1,17 @@
-import { Card, CardContent } from "../components/ui/card";
-import { Button } from "../components/ui/button";
-import Logo from "../components/ui/logo";
-import Container from "../components/ui/container";
+import { Card, CardContent } from "../../components/ui/card";
+import { Button } from "../../components/ui/button";
+import Logo from "../../components/ui/logo";
+import Container from "../../components/ui/container";
 import Link from "next/link";
 import Image from 'next/image';
 
-export default function Header() {
+export default function WorkPage() {
   return (
     <>
     <Container>
-        <div className="intro flex-container">
-          <div className="col1">
-            <div>
-              <Image
-              src="/images/db-profile.jpg"
-              alt="Dan Betz profile"
-              width={200}
-              height={200}
-              className="rounded-full border-4 border-white"
-              priority
-              />
-            </div>
-          </div>
-          <div className="col2">
-            <h1>
-              Dan Betz
-            </h1>
-            <p className="intro-text">
-              Product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and driving impactful user experiences. I’m passionate about mentorship, coaching, and making things better-whether that’s digital experiences, team culture, or perfecting my chocolate chip cookie recipe.
-            </p>
-          </div>
-        </div>
+      <h1>
+          Work work work work work
+      </h1>
 
       {/* Case Studies */}
       <section className="space-y-6" id="work">

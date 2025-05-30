@@ -1,27 +1,15 @@
 'use client';
 
-import { useState } from 'react';
-
-export default function Logo() {
-  const [active, setActive] = useState(false);
-
+export default function Logo({ active = false }: { active?: boolean }) {
   return (
-    <a
-      href="/"
-      className={`logo ${active ? 'toggled' : ''}`}
-      aria-label="Home"
-      onClick={(e) => {
-        e.preventDefault(); // prevent navigation
-        setActive((prev) => !prev);
-      }}
-    >
-            <svg
+    <span className={`logo ${active ? 'toggled' : ''}`} aria-label="db logo">
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 659.87 478.18"
-        width="60"
-        height="60"
+        width="80"
+        height="40"
         role="img"
-        aria-label="Dan Betz logo"
+        aria-label="db logo"
       >
         <g>
           {/* Dark gray group (color #474649) */}
@@ -40,7 +28,6 @@ export default function Logo() {
           <circle className="dot dot-10" fill="#242426" cx="63.51" cy="237.38" r="63.51" />
         </g>
       </svg>
-
-    </a>
+    </span>
   );
 }

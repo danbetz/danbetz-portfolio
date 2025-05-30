@@ -3,6 +3,8 @@ import { ReactNode } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { IBM_Plex_Sans, Instrument_Serif } from 'next/font/google';
+import PageTransition from '../components/ui/pagetransition';
+import Nav from '../components/ui/nav';
 
 const ibm = IBM_Plex_Sans({
   subsets: ['latin'],
@@ -39,7 +41,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body className="portfolio">
-        {children}
+         <Nav />
+         <PageTransition>{children}</PageTransition>
         <Analytics />
         <SpeedInsights />
       </body>
