@@ -5,7 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { IBM_Plex_Sans, Instrument_Serif } from 'next/font/google';
 import PageTransition from '../components/ui/pagetransition';
 import Nav from '../components/ui/nav';
-import Footer from '../components/ui/nav';
+import Footer from '../components/ui/footer';
 
 const ibm = IBM_Plex_Sans({
   subsets: ['latin'],
@@ -29,7 +29,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${ibm.variable} ${instrument.variable}`}>
+    <html lang="en" id="top" className={`${ibm.variable} ${instrument.variable}`}>
       <head>
         {/* Favicon & meta tags */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
