@@ -129,7 +129,7 @@ p {
 
 .nav-left a,
 .nav-right a {
-  color: #555;
+  color: oklch(0.5478 0.007 106.523);
   text-decoration: none;
   transition: color 0.2s ease;
   padding: 1rem;
@@ -137,7 +137,7 @@ p {
 
 .nav-left a:hover,
 .nav-right a:hover {
-  color: #000;
+  color: oklch(0.2921 0.007 106.523);
 }
 
 .nav-logo {
@@ -155,15 +155,16 @@ p {
 
 .nav-logo svg {
   overflow: visible;
+  vertical-align: middle;
 }
 
 /* Animation keyframes for jitter */
 @keyframes jitter {
   0%   { transform: translate(0, 0); }
-  25%  { transform: translate(-5px, 4px); }
-  50%  { transform: translate(2px, -2px); }
-  75%  { transform: translate(-2px, 3px); }
-  100% { transform: translate(0, 0); }
+  25%  { transform: translate(-5px, 4px);}
+  50%  { transform: translate(2px, -2px);}
+  75%  { transform: translate(-2px, 3px);}
+  100% { transform: translate(0, 0);}
 }
 
 /* Hover-triggered group animation */
@@ -251,6 +252,10 @@ p {
 
 /* Responsive media query for smaller screens */
 @media (max-width: 600px) {
+  .site-header {
+    padding: 1rem 0;
+  }
+
   h1 {
     font-size: 2.25rem;
   }
