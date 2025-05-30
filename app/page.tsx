@@ -1,41 +1,48 @@
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
+import Logo from "../components/ui/logo";
+import Container from "../components/ui/container";
 import Link from "next/link";
 import Image from 'next/image';
-import { Passion_One} from 'next/font/google';
-
-const passion = Passion_One({
-  subsets: ['latin'],
-  weight: '400',
-  display: 'swap',
-});
 
 export default function Home() {
   return (
-    <main className="p-8 max-w-4xl mx-auto space-y-12 prose">
-      <div className="flex flex-col md:flex-row items-center gap-10">
-        {/* Headshot */}
-        <div>
-          <Image
-           src="/images/db-profile.jpg"
-          alt="Dan Betz profile"
-          width={200}
-          height={200}
-          className="rounded-full border-4 border-white"
-          priority
-          />
-        </div>
-
-        {/* Intro Text */}
-        <div className="prose prose-lg font-body max-w-prose">
-          <h1 className={`${passion.className}`}>
-            Dan Betz
-          </h1>
-          <p>
-            Product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and driving impactful user experiences. I’m passionate about mentorship, coaching, and making things better-whether that’s digital experiences, team culture, or perfecting my chocolate chip cookie recipe.
-          </p>
-        </div>
+    <>
+    <header className="site-header">
+      <div className="container">
+        <Logo></Logo>
+        <nav className="nav-links">
+          <a href="/work">Work</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+        </nav>
       </div>
+    </header>
+
+    <Container>
+    <main className="container">
+        <div className="intro flex-container">
+          <div className="col1">
+            <div>
+              <Image
+              src="/images/db-profile.jpg"
+              alt="Dan Betz profile"
+              width={200}
+              height={200}
+              className="rounded-full border-4 border-white"
+              priority
+              />
+            </div>
+          </div>
+          <div className="col2">
+            <h1>
+              Dan Betz
+            </h1>
+            <p className="intro-text">
+              Product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and driving impactful user experiences. I’m passionate about mentorship, coaching, and making things better-whether that’s digital experiences, team culture, or perfecting my chocolate chip cookie recipe.
+            </p>
+          </div>
+        </div>
 
       {/* Case Studies */}
       <section className="space-y-6" id="work">
@@ -77,5 +84,7 @@ export default function Home() {
         </Button>
       </section>
     </main>
+    </Container>
+    </>
   );
 }

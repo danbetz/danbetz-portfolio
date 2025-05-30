@@ -2,13 +2,21 @@ import "../styles/globals.css";
 import { ReactNode } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Noto_Serif } from "next/font/google";
+import { IBM_Plex_Sans, Instrument_Serif } from 'next/font/google';
 
-const noto = Noto_Serif({
-  subsets: ["latin"],
-  weight: ["400", "300", "200"],
-  style: ["normal", "italic"],
-  display: "swap",
+const ibm = IBM_Plex_Sans({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-sans',
+  display: 'swap',
+});
+
+const instrument = Instrument_Serif({
+  subsets: ['latin'],
+  weight: '400',
+  style: ['normal', 'italic'],
+  variable: '--font-serif',
+  display: 'swap',
 });
 
 export const metadata = {
@@ -18,7 +26,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${ibm.variable} ${instrument.variable}`}>
       <head>
         {/* Favicon & meta tags */}
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -30,7 +38,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={`${noto.className} bg-white text-black font-sans`}>
+      <body className="portfolio">
         {children}
         <Analytics />
         <SpeedInsights />
