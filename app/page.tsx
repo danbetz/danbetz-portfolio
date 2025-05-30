@@ -1,6 +1,5 @@
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
-import Logo from "../components/ui/logo";
 import Container from "../components/ui/container";
 import Link from "next/link";
 import Image from 'next/image';
