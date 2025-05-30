@@ -42,7 +42,7 @@ export default function Nav() {
         </div>
 
         <div className="nav-right">
-          <Link href="/about" onClick={(e) => handleNav(e, '/about')}>
+          <Link href="/contact" onClick={(e) => handleNav(e, '/contact')}>
             Contact
           </Link>
         </div>
