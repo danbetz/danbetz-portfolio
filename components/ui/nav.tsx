@@ -3,6 +3,8 @@
 import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Logo from '../ui/logo';
+import Link from "next/link";
+
 
 export default function Nav() {
   const router = useRouter();
@@ -28,21 +30,21 @@ export default function Nav() {
     <header className="site-header">
       <div className="nav-container">
         <div className="nav-left">
-          <a href="/work" onClick={(e) => handleNav(e, '/work')}>
+          <Link href="/work" onClick={(e) => handleNav(e, '/work')}>
             Work
-          </a>
+          </Link>
         </div>
 
         <div className="nav-logo">
-          <a href="/" onClick={(e) => handleNav(e, '/')}>
+          <Link href="/" onClick={(e) => handleNav(e, '/')}>
             <Logo active={active} />
-          </a>
+          </Link>
         </div>
 
         <div className="nav-right">
-          <a href="/about" onClick={(e) => handleNav(e, '/about')}>
+          <Link href="/about" onClick={(e) => handleNav(e, '/about')}>
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </header>
