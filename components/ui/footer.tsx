@@ -11,7 +11,7 @@ export default function Footer() {
             <Link href="#top">
                 <Logo />
             </Link>
-          <p>&copy; 2025 Dan Betz</p>
+          <p>&copy; 2025 Dan Betz<br />Keep your paws off my pencils.</p>
         </div>
       </div>
     </footer>

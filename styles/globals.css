@@ -13,7 +13,7 @@ html {
 body {
   font-family: var(--font-sans);
   color: #1a1a1a;
-  background-color: oklch(0.963 0.007 106.523 / 50%);
+  background-color: oklch(0.963 0.007 106.523);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   width: 100%;
@@ -53,7 +53,9 @@ h1 {
 }
 
 h2 {
-  font-style: italic;
+    font-style: italic;
+    font-size: 32px;
+    margin: 4rem 0 .5rem;
 }
 
 h3 {
@@ -64,6 +66,49 @@ h3 {
 p {
   font-size: 1.125rem;
   margin-bottom: 1.25rem;
+}
+
+:root {
+  --shadow-color: 60deg 5% 62%;
+  --shadow-elevation-low:
+
+    0px 0.7px 0.8px hsl(var(--shadow-color) / 0.33),
+    0px 1.2px 1.3px -1.2px hsl(var(--shadow-color) / 0.33),
+    0px 2.9px 3.3px -2.5px hsl(var(--shadow-color) / 0.33);
+  --shadow-elevation-medium:
+    0px 0.7px 0.8px hsl(var(--shadow-color) / 0.35),
+    0px 2.4px 2.7px -0.8px hsl(var(--shadow-color) / 0.35),
+    -0.1px 6px 6.8px -1.7px hsl(var(--shadow-color) / 0.35),
+    -0.1px 14.6px 16.4px -2.5px hsl(var(--shadow-color) / 0.35);
+  --shadow-elevation-high:
+    0px 0.7px 0.8px hsl(var(--shadow-color) / 0.32),
+    0px 4.2px 4.7px -0.4px hsl(var(--shadow-color) / 0.32),
+    -0.1px 7.9px 8.9px -0.7px hsl(var(--shadow-color) / 0.32),
+    -0.1px 12.9px 14.5px -1.1px hsl(var(--shadow-color) / 0.32),
+    -0.2px 20.6px 23.2px -1.4px hsl(var(--shadow-color) / 0.32),
+    -0.3px 32.2px 36.2px -1.8px hsl(var(--shadow-color) / 0.32),
+    -0.5px 48.9px 55px -2.1px hsl(var(--shadow-color) / 0.32),
+    -0.7px 72px 81px -2.5px hsl(var(--shadow-color) / 0.32);
+}
+
+.intro {}
+.intro .profile-photo {
+  border-radius: 1rem;
+  box-shadow: var(--shadow-elevation-low);
+  transition: all 0.1s ease;
+
+}
+.intro .profile-photo:hover {
+  box-shadow: var(--shadow-elevation-medium);
+  scale: 1.05;
+  rotate: -3deg;
+}
+
+.case-study {
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0 0 2rem;
+    box-shadow: #fafafa 0px 0px 0px 3px;
 }
 
 .button {
@@ -118,7 +163,6 @@ p {
   position: relative;
 }
 
-/* Make sure left and right take up equal space */
 .nav-left,
 .nav-right {
   flex: 1;
@@ -145,7 +189,7 @@ p {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  pointer-events: none; /* logo stays centered regardless of left/right width */
+  pointer-events: none;
 }
 
 .nav-logo a {
@@ -254,7 +298,11 @@ p {
 }
 
 .site-footer p {
+  font-family: var(--font-serif);
+  font-style: italic;
   font-size: .875rem;
+  text-align: center;
+  line-height: normal;
 }
 
 /* Responsive media query for smaller screens */
