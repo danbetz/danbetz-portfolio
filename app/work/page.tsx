@@ -13,7 +13,7 @@ export default function WorkPage() {
 
       {/* Case Studies */}
       <section className="space-y-6" id="work">
-        <h2 className="font-header">Work & Impact</h2>
+        <h2 className="font-header">Work &amp; Impact</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Card>
             <CardContent className="p-4 space-y-2">
@@ -42,7 +42,7 @@ export default function WorkPage() {
 
       {/* Contact Section */}
       <section className="space-y-4" id="contact">
-        <h2 className="text-2xl font-semibold">Let’s Connect</h2>
+        <h2 className="text-2xl font-semibold">Let&apos;s Connect</h2>
         <p>
           Interested in working together, talking shop, or just grabbing coffee? Drop me a line.
         </p>
