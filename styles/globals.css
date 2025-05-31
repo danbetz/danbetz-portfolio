@@ -68,38 +68,13 @@ p {
   margin-bottom: 1.25rem;
 }
 
-:root {
-  --shadow-color: 60deg 5% 62%;
-  --shadow-elevation-low:
-
-    0px 0.7px 0.8px hsl(var(--shadow-color) / 0.33),
-    0px 1.2px 1.3px -1.2px hsl(var(--shadow-color) / 0.33),
-    0px 2.9px 3.3px -2.5px hsl(var(--shadow-color) / 0.33);
-  --shadow-elevation-medium:
-    0px 0.7px 0.8px hsl(var(--shadow-color) / 0.35),
-    0px 2.4px 2.7px -0.8px hsl(var(--shadow-color) / 0.35),
-    -0.1px 6px 6.8px -1.7px hsl(var(--shadow-color) / 0.35),
-    -0.1px 14.6px 16.4px -2.5px hsl(var(--shadow-color) / 0.35);
-  --shadow-elevation-high:
-    0px 0.7px 0.8px hsl(var(--shadow-color) / 0.32),
-    0px 4.2px 4.7px -0.4px hsl(var(--shadow-color) / 0.32),
-    -0.1px 7.9px 8.9px -0.7px hsl(var(--shadow-color) / 0.32),
-    -0.1px 12.9px 14.5px -1.1px hsl(var(--shadow-color) / 0.32),
-    -0.2px 20.6px 23.2px -1.4px hsl(var(--shadow-color) / 0.32),
-    -0.3px 32.2px 36.2px -1.8px hsl(var(--shadow-color) / 0.32),
-    -0.5px 48.9px 55px -2.1px hsl(var(--shadow-color) / 0.32),
-    -0.7px 72px 81px -2.5px hsl(var(--shadow-color) / 0.32);
-}
-
 .intro {}
 .intro .profile-photo {
   border-radius: 1rem;
-  box-shadow: var(--shadow-elevation-low);
   transition: all 0.1s ease;
 
 }
 .intro .profile-photo:hover {
-  box-shadow: var(--shadow-elevation-medium);
   scale: 1.05;
   rotate: -3deg;
 }
@@ -277,7 +252,7 @@ p {
 .site-footer .logo:hover .dot-7  { animation: wiggleColor4 0.5s infinite ease-in-out 300ms; }
 .site-footer .logo:hover .dot-8  { animation: wiggleColor3 0.5s infinite ease-in-out 350ms; }
 .site-footer .logo:hover .dot-9  { animation: wiggleColor2 0.5s infinite ease-in-out 400ms; }
-.site-footer .logo:hover .dot-10 { animation: wiggleColor1 0.5s infinite ease-in-out 450ms; } */
+.site-footer .logo:hover .dot-10 { animation: wiggleColor1 0.5s infinite ease-in-out 450ms; } 
 
 .site-footer {
   text-align: center;
