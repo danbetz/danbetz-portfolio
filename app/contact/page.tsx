@@ -10,6 +10,10 @@ export default function WorkPage() {
       </h1>
 
         <Button asChild>
+          <a href="#">Dummy button</a>
+        </Button>
+
+        <Button asChild>
           <a href="https://www.linkedin.com/in/danbetz/">LinkedIn</a>
         </Button>
 

@@ -7,32 +7,26 @@ import Image from "next/image";
 export default function Header() {
   return (
     <>
+    <div className="intro">
     <Container>
-        <div className="intro flex-container">
-          <div className="col1">
-            <div>
-              <Image
-              src="/images/db-profile.jpg"
-              alt="Dan Betz profile"
-              width={200}
-              height={200}
-              className="profile-photo"
-              priority
-              />
-            </div>
-          </div>
-          <div className="col2">
-            <h1>
-              Dan Betz
-            </h1>
-            <p className="intro-text">
-              Product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and driving impactful user experiences. I&apos;m passionate about mentorship, coaching, and making things better-whether that&apos;s digital experiences, team culture, or perfecting my chocolate chip cookie recipe.
-            </p>
-          </div>
-        </div>
+      <div className="intro-content">
+        <Image
+          src="/images/db-profile.jpg"
+          alt="Dan Betz profile"
+          width={200}
+          height={200}
+          className="profile-photo"
+          priority
+        />
+        <h1>Dan Betz is a product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and driving impactful user experiences. He also knows kung fu.</h1>
+      </div>
+    </Container>
+    </div>
 
+      <Container>
       {/* Case Studies */}
       <section className="work-summary" id="work">
+        <h3>PROFESSIONAL EXPERIENCE</h3>
         <h2 className="font-header">VP Product & Design @ DonorsChoose</h2>
         <p>I lead the product, design, and UX research team at DonorsChoose. Our small but mighty team helps DonorsChoose deliver on its mission—to make it easy for anyone to help a teacher in need, moving us closer to a nation where students in every community have the tools and experiences they need for a great education. We design the site experience to empower teachers to tell their stories in a compelling way and make it easy and gratifying for donors to find classroom projects to support. I also order the pizza for QA testing parties.</p>
 
