@@ -9,15 +9,15 @@ export default function WorkPage() {
           Contact the kid
       </h1>
 
-        <Button asChild>
+        <Button>
           <a href="#">Dummy button</a>
         </Button>
 
-        <Button asChild>
+        <Button>
           <a href="https://www.linkedin.com/in/danbetz/">LinkedIn</a>
         </Button>
 
-        <Button asChild>
+        <Button>
           <a href="mailto:dan.betz@gmail.com">Email Me</a>
         </Button>
 

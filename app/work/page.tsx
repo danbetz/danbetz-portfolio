@@ -46,7 +46,7 @@ export default function WorkPage() {
         <p>
           Interested in working together, talking shop, or just grabbing coffee? Drop me a line.
         </p>
-        <Button asChild>
+        <Button>
           <a href="mailto:your.email@example.com">Email Me</a>
         </Button>
       </section>

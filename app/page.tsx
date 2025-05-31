@@ -18,7 +18,7 @@ export default function Header() {
           className="profile-photo"
           priority
         />
-        <h1>Dan Betz is a product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and driving impactful user experiences. He also knows kung fu.</h1>
+        <h1>Dan Betz is a product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and leading teams that deliver high impact results. He also knows kung fu.</h1>
       </div>
     </Container>
     </div>
@@ -102,7 +102,7 @@ export default function Header() {
         <p>
           Interested in working together, talking shop, or just grabbing coffee? Drop me a line.
         </p>
-        <Button asChild>
+        <Button>
           <a href="mailto:your.email@example.com">Email Me</a>
         </Button>
       </section>
