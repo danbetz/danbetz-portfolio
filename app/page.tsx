@@ -46,7 +46,7 @@ export default function Header() {
         <p>At Norton, I was responsible for designing and maintaining the online book catalog for all college books. I also begrudgingly did a little print and multimedia work, but my main focus was on the web. I&apos;m still riding the high of winning a hotly contested chocolate chip cookie bake-off in 2004.</p>
 
         <h2 className="font-header">Graphic Designer @ The Graphics Source</h2>
-        <p>I learned a ton as a jack-of-all-trades designer at this small design shop. There was a lot of print work, some branding projects, but I also took the lead as the main "web guy" and worked on all website design projects that came our way. </p>
+        <p>I learned a ton as a jack-of-all-trades designer at this small design shop. There was a lot of print work, some branding projects, but I also took the lead as the main &quot;web guy&quot; and worked on all website design projects that came our way. </p>
 
         <h2 className="font-header">Junior Designer @ Cleaner&apos;s Supply</h2>
         <p>While still a full-time college student, I got my feet wet designing garment bags, hangers, and all sorts of dry cleaner-related projects. I also had the opportunity to design the first version of cleanersupply.com, which enabled their online ordering platform and remains virtually unchanged many years later!</p>
