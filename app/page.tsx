@@ -1,4 +1,3 @@
-import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 import Container from "../components/ui/container";
 import Link from "next/link";
@@ -10,15 +9,7 @@ export default function Header() {
     <div className="intro">
     <Container>
       <div className="intro-content">
-        <Image
-          src="/images/db-profile.jpg"
-          alt="Dan Betz profile"
-          width={200}
-          height={200}
-          className="profile-photo"
-          priority
-        />
-        <h1>Dan Betz is a product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and leading teams that deliver high impact results. He also knows kung fu.</h1>
+        <h1>Dan Betz is a product and design leader with 25 years of experience building and scaling teams, shaping product strategy, and shipping features and improvements that deliver results. He also knows kung&nbsp;fu.</h1>
       </div>
     </Container>
     </div>
@@ -44,56 +35,6 @@ export default function Header() {
 
         <h2 className="font-header">Junior Designer @ Cleaner&apos;s Supply</h2>
         <p>While still a full-time college student, I got my feet wet designing garment bags, hangers, and all sorts of dry cleaner-related projects. I also had the opportunity to design the first version of cleanersupply.com, which enabled their online ordering platform and remains virtually unchanged many years later!</p>
-
-          <Card>
-            <CardContent className="case-study">
-              <h3>DonorsChoose: Scaling with Pods</h3>
-              <p>
-                They&apos;re using our own satellites against us. *And the clock is tic*king. God help us, we&apos;re in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You&apos;re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
-              </p>
-              <Link href="#" className="link-text">
-                Read More
-              </Link>
-            </CardContent>
-          </Card>
-          
-          <Card>
-            <CardContent className="case-study">
-              <h3 className="font-medium text-xl">Design Leadership & Mentorship</h3>
-              <p>
-                Forget the fat lady! You&apos;re obsessed with the* fat lady! Drive us *out of here! Must go faster. Hey, you know how I&apos;m, like. always trying to save the planet? Here&apos;s my chance. God help us, we&apos;re in the hands of engineers. I gave it a cold? I gave it a virus. A computer virus.</p>
-                <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. Remind me to thank John for a lovely weekend. Hey, take a look at the earthlings. Goodbye! Remind me to thank John for a lovely weekend. What do they got in there? King Kong?
-            </p>
-              <Link href="#" className="text-primary underline">
-                Read More
-              </Link>
-            </CardContent>
-          </Card>
-          
-          <Card>
-          <CardContent className="case-study">
-              <h3>DonorsChoose: Scaling with Pods</h3>
-              <p>
-                They&apos;re using our own satellites against us. *And the clock is tic*king. God help us, we&apos;re in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You&apos;re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
-              </p>
-              <Link href="#" className="link-text">
-                Read More
-              </Link>
-            </CardContent>
-          </Card>
-
-          <Card>
-            <CardContent className="case-study">
-              <h3>DonorsChoose: Scaling with Pods</h3>
-              <p>
-                They&apos;re using our own satellites against us. *And the clock is tic*king. God help us, we&apos;re in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You&apos;re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?
-              </p>
-              <Link href="#" className="link-text">
-                Read More
-              </Link>
-            </CardContent>
-          </Card>
-
       </section>
 
       {/* Contact Section */}
