@@ -28,6 +28,7 @@
 html {
   font-size: 100%;
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: oklch(0.963 0.007 106.523);
 }
 
 body {
@@ -263,6 +264,7 @@ button.secondary:active a {
   text-decoration: none;
   transition: color 0.2s ease;
   padding: 1rem;
+  border-radius: 3px;
 }
 
 .nav-left a:hover,
