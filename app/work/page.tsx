@@ -7,38 +7,30 @@ export default function WorkPage() {
   return (
     <>
     <Container>
-      <h1>
-          Work work work work work
-      </h1>
+      <h1>Work work work work work</h1>
 
       {/* Case Studies */}
-      <section className="space-y-6" id="work">
-        <h2 className="font-header">Work &amp; Impact</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card>
-            <CardContent className="p-4 space-y-2">
-              <h3 className="font-medium text-xl">DonorsChoose: Scaling with Pods</h3>
-              <p>
-                Led the evolution of our product org into mission-aligned pods, improving focus, accountability, and outcomes.
-              </p>
-              <Link href="#" className="text-primary underline">
-                Read More
-              </Link>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardContent className="p-4 space-y-2">
-              <h3 className="font-medium text-xl">Design Leadership & Mentorship</h3>
-              <p>
-                Built a thriving design team and culture from scratch. Mentored junior designers into senior leaders.
-              </p>
-              <Link href="#" className="text-primary underline">
-                Read More
-              </Link>
-            </CardContent>
-          </Card>
-        </div>
+      <section className="case-study" id="work">
+        <h2 className="font-header">DonorsChoose School-Level Giving Launch</h2>
+        <p>They're using our own satellites against us. *And the clock is tic*king. God help us, we're in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
       </section>
+
+      <section className="case-study" id="work">
+        <h2 className="font-header">DonorsChoose Teacher Project Creation Redesign</h2>
+        <p>They're using our own satellites against us. *And the clock is tic*king. God help us, we're in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
+      </section>
+      
+      <section className="case-study" id="work">
+        <h2 className="font-header">DonorsChoose Teacher Registration</h2>
+        <p>They're using our own satellites against us. *And the clock is tic*king. God help us, we're in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
+      </section>
+
+      <section className="case-study" id="work">
+        <h2 className="font-header">Hiring, Retaining, and Developing Talent</h2>
+        <p>They're using our own satellites against us. *And the clock is tic*king. God help us, we're in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
+      </section>
+
+
 
       {/* Contact Section */}
       <section className="space-y-4" id="contact">

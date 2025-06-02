@@ -8,18 +8,29 @@ export default function WorkPage() {
       <h1>
           Contact the kid
       </h1>
+        <div className="button-group">
+            <Button>
+            <a href="https://www.linkedin.com/in/danbetz/">LinkedIn</a>
+            </Button>
 
-        <Button>
-          <a href="#">Dummy button</a>
-        </Button>
+            <Button>
+            <a href="mailto:dan.betz@gmail.com">Email Me</a>
+            </Button>
+        </div>
 
-        <Button>
-          <a href="https://www.linkedin.com/in/danbetz/">LinkedIn</a>
-        </Button>
+        <div className="button-group">
+            <Button className="secondary">
+            <a href="#">Bluesky</a>
+            </Button>
 
-        <Button>
-          <a href="mailto:dan.betz@gmail.com">Email Me</a>
-        </Button>
+            <Button className="secondary">
+            <a href="#">Whatever</a>
+            </Button>
+
+            <Button className="secondary">
+            <a href="#">Whatever</a>
+            </Button>
+        </div>
 
     </Container>
     </>

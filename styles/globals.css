@@ -1,4 +1,6 @@
-/* Reset / Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +11,18 @@
   --color-light: oklch(0.9838 0.007 106.523);
   --color-med: oklch(0.5478 0.007 106.523);
   --color-dark: oklch(0.2921 0.007 106.523);
-  --color-link: brown;
+  --color-stroke: oklch(0.963 0.007 106.523);
+  --color-link: #3a86ff;
+  --shadow-color: 60deg 11% 60%;
+  --shadow-light:
+    0px 0.6px 0.7px hsl(var(--shadow-color) / 0.34),
+    0px 1px 1.1px -1.2px hsl(var(--shadow-color) / 0.34),
+    0px 2.3px 2.6px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-med:
+    0px 0.6px 0.7px hsl(var(--shadow-color) / 0.36),
+    0px 1.9px 2.1px -0.8px hsl(var(--shadow-color) / 0.36),
+    0px 4.8px 5.4px -1.7px hsl(var(--shadow-color) / 0.36),
+    0px 11.7px 13.2px -2.5px hsl(var(--shadow-color) / 0.36);
 }
 
 html {
@@ -19,7 +32,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  color: #1a1a1a;
+  background-color: var(--color-dark);
   background-color: var(--color-light);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -63,6 +76,7 @@ h2 {
     font-style: italic;
     font-size: 32px;
     margin: 4rem 0 .5rem;
+    text-wrap: balance;
 }
 
 h3 {
@@ -82,6 +96,11 @@ h3 + h2 {
 p {
   font-size: 1.125rem;
   margin-bottom: 1.25rem;
+  text-wrap: pretty;
+}
+
+p a {
+  color: var(--color-link);
 }
 
 p.date-range {
@@ -94,7 +113,7 @@ p.date-range {
 
 .intro {
   background-image: url(../public/images/db-profile-superduperwide.webp);
-  background-size: cover;      /* fills the element */
+  background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   position: relative;
@@ -122,11 +141,6 @@ p.date-range {
   z-index: 1;
 }
 
-
-/* @media (min-width: 1200px) {
-  .intro {background-image: url(../public/images/db-profile-superwide.webp);}
-} */
-
 .intro-content {
   padding: 1rem 0;
   width: 72%;
@@ -146,106 +160,82 @@ p.date-range {
     box-shadow: #fafafa 0px 0px 0px 3px;
 }
 
-/* From Uiverse.io by cssbuttons-io */ 
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-group button {
+  flex: 1;
+}
+
 button {
- position: relative;
- display: block;
- width: 100%;
- margin: 0 0 2rem 0;
- border: none;
- background: transparent;
- padding: 0;
- cursor: pointer;
- outline-offset: 4px;
- transition: filter 250ms;
- user-select: none;
- touch-action: manipulation;
+  font-family: inherit;
+  font-size: 1.125rem;
+  font-weight: 600;
+  background: var(--color-link);
+  color: white;
+  padding: 1rem .5rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  margin: 0 0 1rem;
+  box-shadow: var(--shadow-light);
+  border: 1px solid;
+  border-color: color-mix(in srgb, var(--color-link), black 10%);
 }
 
-.shadow {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- border-radius: 12px;
- background: hsl(0deg 0% 0% / 0.25);
- will-change: transform;
- transform: translateY(2px);
- transition: transform
-    600ms
-    cubic-bezier(.3, .7, .4, 1);
+button.linkedin {
+  background-color: #0077B5;
+  border-color: color-mix(in srgb, #0077B5, black 10%);
 }
 
-.edge {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- border-radius: 12px;
- background: linear-gradient(
-    to left,
-    hsl(340deg 100% 16%) 0%,
-    hsl(340deg 100% 32%) 8%,
-    hsl(340deg 100% 32%) 92%,
-    hsl(340deg 100% 16%) 100%
-  );
+button.secondary {
+  background-color: var(--color-stroke);
+  border-color: color-mix(in srgb, var(--color-stroke), black 10%);
+
 }
 
 button a {
- display: block;
- text-decoration: none;
- position: relative;
- padding: 12px 27px;
- border-radius: 12px;
- font-size: 1.125rem;
- font-weight: 600;
- color: white;
- background: hsl(345deg 100% 47%);
- will-change: transform;
- transform: translateY(-4px);
- transition: transform
-    600ms
-    cubic-bezier(.3, .7, .4, 1);
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+button.secondary a {
+  color: var(--color-dark);
+  filter: brightness(95%);
 }
 
 button:hover {
- filter: brightness(110%);
+ filter: brightness(100%);
+ transform: translate(0px, -1px);
+ box-shadow: var(--shadow-med);
 }
 
-button:hover a {
- transform: translateY(-6px);
- transition: transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
+button.secondary:hover a {
+  filter: brightness(105%);
 }
 
-button:active a {
- transform: translateY(-2px);
- transition: transform 34ms;
+button:active {
+  filter: brightness(95%);
+  transform: translate(0px, 2px);
+  box-shadow: var(--shadow-light);
 }
 
-button:hover .shadow {
- transform: translateY(4px);
- transition: transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
-}
-
-button:active .shadow {
- transform: translateY(1px);
- transition: transform 34ms;
-}
-
-button:focus:not(:focus-visible) {
- outline: none;
+button.secondary:active a {
+  filter: brightness(90%);
 }
 
 .site-header {
   padding: 1rem 2rem;
   background-color: #fff;
-  border-bottom: 1px solid oklch(0.963 0.007 106.523);
+  border-bottom: 1px solid var(--color-stroke);
 }
 
 .nav-container {
@@ -436,17 +426,28 @@ button:focus:not(:focus-visible) {
     font-size: 1.875rem;
   }
 
+  h2 {
+    font-size: 1.875rem;
+  }
+
   h3 {
-  padding: .3em .6em .3em 1.5rem;
+  padding: .3rem 1.5rem;
   margin-left: -1.5rem;
   border-radius: 0 3px 3px 0;
 }
 
   p {
     font-size: 1rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
   
+  .button-group {
+  display: block;
+}
+
+.button-group button {
+  flex: none;
+}
 
   @keyframes jitter {
   0%   { transform: translate(0, 0); scale: 1; }

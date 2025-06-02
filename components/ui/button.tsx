@@ -2,13 +2,12 @@ import { ReactNode } from "react";
 
 type ButtonProps = {
   children: ReactNode;
+  className?: string;
 };
 
-export function Button({ children }: ButtonProps) {
+export function Button({ children, className = "" }: ButtonProps) {
   return (
-    <button className="button">
-      <span className="shadow"></span>
-      <span className="edge"></span>
+    <button className={`button ${className}`}>
       {children}
     </button>
   );

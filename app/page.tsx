@@ -18,7 +18,7 @@ export default function Header() {
         <h3>PROFESSIONAL EXPERIENCE</h3>
         <h2 className="font-header">VP Product & Design @ DonorsChoose</h2>
         <p className="date-range">Jun 2014&ndash;present</p>
-        <p>I lead the product, design, and UX research team at DonorsChoose. Our small but mighty team helps DonorsChoose deliver on its mission—to make it easy for anyone to help a teacher in need, moving us closer to a nation where students in every community have the tools and experiences they need for a great education. We design the site experience to empower teachers to tell their stories in a compelling way and make it easy and gratifying for donors to find classroom projects to support. I also order the pizza for QA testing parties.</p>
+        <p>I currently lead the product, design, and UX research team at DonorsChoose. Our small but mighty team helps DonorsChoose deliver on its mission—to make it easy for anyone to help a teacher in need, moving us closer to a nation where students in every community have the tools and experiences they need for a great education. We design the site experience to empower teachers to tell their stories in a compelling way and make it easy and gratifying for donors to find classroom projects to support. I also order the pizza for QA testing parties.</p>
 
         <h2 className="font-header">Senior Product Designer @ Etsy</h2>
         <p className="date-range">Jan 2011&ndash;Jun 2014</p>
