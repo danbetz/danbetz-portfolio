@@ -10,22 +10,22 @@ export default function WorkPage() {
       {/* Case Studies */}
       <section className="case-study" id="work">
         <h2 className="font-header">DonorsChoose School-Level Giving Launch</h2>
-        <p>They're using our own satellites against us. *And the clock is tic*king. God help us, we're in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
+        <p>They&apos;re using our own satellites against us. *And the clock is tic*king. God help us, we&apos;re in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You&apos;re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
       </section>
 
       <section className="case-study" id="work">
         <h2 className="font-header">DonorsChoose Teacher Project Creation Redesign</h2>
-        <p>They're using our own satellites against us. *And the clock is tic*king. God help us, we're in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
+        <p>They&apos;re using our own satellites against us. *And the clock is tic*king. God help us, we&apos;re in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You&apos;re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
       </section>
       
       <section className="case-study" id="work">
         <h2 className="font-header">DonorsChoose Teacher Registration</h2>
-        <p>They're using our own satellites against us. *And the clock is tic*king. God help us, we're in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
+        <p>They&apos;re using our own satellites against us. *And the clock is tic*king. God help us, we&apos;re in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You&apos;re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
       </section>
 
       <section className="case-study" id="work">
         <h2 className="font-header">Hiring, Retaining, and Developing Talent</h2>
-        <p>They're using our own satellites against us. *And the clock is tic*king. God help us, we're in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You're a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
+        <p>They&apos;re using our own satellites against us. *And the clock is tic*king. God help us, we&apos;re in the hands of engineers. Hey, take a look at the earthlings. Goodbye! You&apos;re a very talented young man, with your own clever thoughts and ideas. Do you need a manager?</p>
       </section>
 
 
