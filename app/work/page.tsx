@@ -1,7 +1,5 @@
-import { Card, CardContent } from "../../components/ui/card";
 import { Button } from "../../components/ui/button";
 import Container from "../../components/ui/container";
-import Link from "next/link";
 
 export default function WorkPage() {
   return (
