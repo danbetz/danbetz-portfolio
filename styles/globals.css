@@ -404,6 +404,7 @@ button.secondary:active a {
 @media (max-width: 600px) {
   .fan-image {
     width: 200px;
+    height: auto;
   }
   .fan-stack.spread .fan-pos-0 {
     transform: translate3D(-91px, -80px, -120px) rotate(9deg);

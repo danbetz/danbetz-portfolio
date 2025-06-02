@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
@@ -35,10 +36,12 @@ export default function FanStack() {
       ref={containerRef}
     >
       {images.map((img, i) => (
-  <img
+  <Image
     key={i}
     src={img.src}
     alt={img.alt}
+    width={270}
+    height={203}
     className={`fan-image fan-pos-${i}`}
     style={{
       zIndex: images.length - i,
