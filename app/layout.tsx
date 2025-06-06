@@ -31,7 +31,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const layoutClass = (metadata as any)?.layoutClassName ?? "";
+  const layoutClass = (metadata as unknown)?.layoutClassName ?? "";
   return (
     <html lang="en" id="top" className={`${ibm.variable} ${instrument.variable}`}>
       <head>
