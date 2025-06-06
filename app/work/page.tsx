@@ -70,7 +70,7 @@ export default function WorkPage() {
       <section className="space-y-4" id="contact">
         <h3>Let&apos;s be real&hellip;</h3>
         <p>
-          It's tough to represent the kind of work I do as a leader visually. The best way to get to know about my approach and what I can bring to your team is to talk.
+          It&apos;s tough to represent the kind of work I do as a leader visually. The best way to get to know about my approach and what I can bring to your team is to talk.
         </p>
         <Button>
           <a href="mailto:your.email@example.com">Email me</a>

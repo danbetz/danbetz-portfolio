@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-import { ReactNode } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { IBM_Plex_Sans, Instrument_Serif } from 'next/font/google';
@@ -29,7 +28,6 @@ export const metadata = {
 
 export default function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
 }) {

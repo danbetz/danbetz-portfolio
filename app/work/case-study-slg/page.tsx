@@ -84,7 +84,7 @@ export default function CaseStudySLG() {
       <section id="contact">
         <h2>Let&apos;s be real&hellip;</h2>
         <p>
-          It's tough to represent the kind of work I do as a leader visually. The best way to get to know about my approach and what I can bring to your team is to talk.
+          It&apos;s tough to represent the kind of work I do as a leader visually. The best way to get to know about my approach and what I can bring to your team is to talk.
         </p>
         <Button>
           <a href="mailto:your.email@example.com">Email me</a>
