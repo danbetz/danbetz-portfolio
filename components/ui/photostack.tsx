@@ -4,10 +4,10 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
 const images = [
-  { src: "/images/photo5.webp", alt: "At work" },
-  { src: "/images/photo2.webp", alt: "Coaching" },
-  { src: "/images/photo7.webp", alt: "Designing" },
-  { src: "/images/photo5.webp", alt: "Coffee break" },
+  { src: "/images/photo5.webp", alt: "Me with my girls" },
+  { src: "/images/photo10.webp", alt: "Ready for the Ghost show" },
+  { src: "/images/photo9.webp", alt: "The whole fam" },
+  { src: "/images/photo8.webp", alt: "Jiu jitsu fellas" },
 ];
 
 export default function FanStack() {
@@ -19,7 +19,7 @@ export default function FanStack() {
     if (!containerRef.current || hasAnimated) return;
 
     const rect = containerRef.current.getBoundingClientRect();
-    const isNearTop = rect.top >= 0 && rect.top <= window.innerHeight * 0.25;
+    const isNearTop = rect.top >= 0 && rect.top <= window.innerHeight * 0.5;
 
     if (isNearTop) {
       setHasAnimated(true);

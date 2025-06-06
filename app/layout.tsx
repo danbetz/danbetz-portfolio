@@ -23,11 +23,17 @@ const instrument = Instrument_Serif({
 });
 
 export const metadata = {
-  title: "Dan Betz Portfolio",
-  description: "Product & Design Leader in Nonprofit Tech",
+  title: "Dan Betz • Product & Design Leader in Nonprofit Tech",
+  description: "Summary of Dan Betz's background and professional experience. He's really great.",
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export default function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+}) {
+  const layoutClass = (metadata as any)?.layoutClassName ?? "";
   return (
     <html lang="en" id="top" className={`${ibm.variable} ${instrument.variable}`}>
       <head>
@@ -41,7 +47,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className="portfolio">
+      <body className={`portfolio ${layoutClass}`}>
          <Nav />
          <PageTransition>{children}</PageTransition>
         <Analytics />
