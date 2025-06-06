@@ -31,7 +31,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const layoutClass = (metadata as unknown)?.layoutClassName ?? "";
   return (
     <html lang="en" id="top" className={`${ibm.variable} ${instrument.variable}`}>
       <head>
@@ -45,7 +44,7 @@ export default function RootLayout({
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-      <body className={`portfolio ${layoutClass}`}>
+      <body className="portfolio">
          <Nav />
          <PageTransition>{children}</PageTransition>
         <Analytics />
